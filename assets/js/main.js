@@ -26,12 +26,14 @@ function iniciaRelogio() {
 
 //pegar evento de click de um botao
 iniciar.addEventListener('click', function (event) {
+    relogio.classList.remove('pausado')
     clearInterval(timer);
     iniciaRelogio();
 });
 
 pausar.addEventListener('click', function(event) {
     clearInterval(timer);
+    relogio.classList.add('pausado')
 });
 
 zerar.addEventListener('click', function (event) {
