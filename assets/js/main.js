@@ -1,8 +1,8 @@
 //criando funcao criaHorasDosSegundos - ela recebe os segundos, cria a data e da a data
 
-function criaHorasDosSegundos (segundos){
-    const data = new Date(segundos *1000); // transformando os milissegundos em segundos
-    return data.toLocaleTimeString('pt-Br',{
+function criaHorasDosSegundos(segundos) {
+    const data = new Date(segundos * 1000); // formata os milissegundos em segundos
+    return data.toLocaleTimeString('pt-Br', {
         hour12: false,
         timeZone: 'UTC'
 
@@ -15,23 +15,28 @@ const iniciar = document.querySelector('.iniciar');
 const pausar = document.querySelector('.pausar');
 const zerar = document.querySelector('.zerar');
 let segundos = 0; //var que vai receber os segundos
+let timer;
 
-function iniciaRelogio(){
-    const timer = setInterval(function(){
+function iniciaRelogio() {
+        timer = setInterval(function () {
         segundos++;
-        relogio.innerHTML= criaHorasDosSegundos(segundos);
-    },1000 );
+        relogio.innerHTML = criaHorasDosSegundos(segundos);
+    }, 1000);
 }
 
 //pegar evento de click de um botao
-iniciar.addEventListener('click',function(event){
+iniciar.addEventListener('click', function (event) {
+    clearInterval(timer);
     iniciaRelogio();
 });
 
-pausar.addEventListener('click',function(event){
-    console.log('teste');
+pausar.addEventListener('click', function(event) {
+    clearInterval(timer);
 });
 
-zerar.addEventListener('click',function(event){
-    console.log('teste');
+zerar.addEventListener('click', function (event) {
+    clearInterval(timer);
+    relogio.innerHTML= '00:00:00'
+    segundos =0;
+  
 });
