@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+* {
+  box-sizing: border-box;
+  outline: 0;
+  color: #1afe49;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #555152;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #000000;
+  padding: 30px;
+  border-radius: 10px;
+  border: #1afe49 solid 2px;
+  box-shadow: inset 0 0 1em gold, 0 0 1em ;
+}
+
+button{
+  color: #000000;
+  font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 9px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  color: aliceblue    ;
+  text-decoration: none;
+}
+
+.relogio{
+  font-size: 1.7em;
+}
