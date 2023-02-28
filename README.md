@@ -13,6 +13,6 @@ Botão de iniciar para startar o cronometro, um botão para pausar e um para zer
 
 <br>
 
-## Status do projeto: ♻️Em desenvolvimento
+## Status do projeto: ✅ Completo
 <br>
 <img width="720" alt="1" src="https://user-images.githubusercontent.com/52001215/221654488-382bee68-aaf1-414f-850a-bbaadddfd937.png">
